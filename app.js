@@ -29,7 +29,7 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/noticias', noticias);
 app.use('/bars', bars);
-app.user('/about', about);
+app.use('/about', about);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
