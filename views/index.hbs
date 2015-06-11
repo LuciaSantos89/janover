@@ -1,49 +1,36 @@
 <div class="container">
-		
-		<div class="row section featured topspace">
-			<h2 class="section-title"><span>Hoy</span></h2>
-			<div class="row">
-				<div class="col-sm-6 col-md-3">
-					<h3 class="text-center">Promocion 1</h3>
-					<p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect men.</p>
-					<p class="text-center"><a href="noticias" class="btn btn-action">Leer mas</a></p>
-				</div>
-
-			</div>
-		</div> <!-- / section -->
 	
+	<div class="row section featured topspace">
+		<h2 class="section-title"><span>Hoy</span></h2>
+		<div class="row">
+			<div class="col-sm-6 col-md-3">
+				<h3 class="text-center">Promocion 1</h3>
+				<p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect men.</p>
+				<p class="text-center"><a href="noticias" class="btn btn-action">Leer mas</a></p>
+			</div>
+		</div>
+		</div> <!-- / section -->
+		
 		<div class="row section recentworks topspace">
 			
 			<h2 class="section-title"><span>Bares</span></h2>
 			
 			<div class="thumbnails recentworks row">
-				
+				{{#each bars}}
 				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-					<a class="thumbnail" href="bars">
+					<a class="thumbnail" href="bar/{{this.id}}">
 						<span class="img">
-							<img src="/images/s1.jpg" alt="">
+							<img src="/images/{{this.id}}.jpg" alt="">
 							<span class="cover"><span class="more">Ver mas &rarr;</span></span>
 						</span>
-						<span class="title">Bar 1</span>
+						<span class="title">{{this.name}}</span>
 					</a>
 					<h4></h4>
 					<p></p>
 				</div>
-				
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-					<a class="thumbnail" href="bars">
-						<span class="img">
-							<img src="/images/s1.jpg" alt="">
-							<span class="cover"><span class="more">Ver mas &rarr;</span></span>
-						</span>
-						<span class="title">Bar 2</span>
-					</a>
-
-					<h4></h4>
-					<p></p>
-				</div>
+				{{/each}}
 			</div>
-
-		</div> <!-- /section -->
-
-	</div>	<!-- /container -->
+			
+			
+			</div> <!-- /section -->
+			</div>	<!-- /container -->

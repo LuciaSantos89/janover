@@ -1,0 +1,83 @@
+[
+  {
+    "id":1,
+    "name":"360 Lounge",
+    "direction":"Edificio Metropolis, 18th Floor (Bulevar Suyapa)",
+    "schedule days":"Miercoles - Sabado",
+    "schedule hours":"6:00 pm - 2:00 am",
+    "phone":22234598,
+    "menu":""
+  },
+  {
+    "id":2,
+    "name":"Angry Beaver Pub",
+    "direction":"Colonia Palmira",
+    "schedule days":"Martes - Sabado",
+    "schedule hours":"4:00 pm -2:00 am",
+    "phone":22245687,
+    "menu":""
+  },
+  {
+    "id":3,
+    "name":"Casa De Puros",
+    "direction":"Parque Corporativo Los Proceres, 2do. Nivel Gourmet Center",
+    "schedule days":"Martes - Sabado",
+    "schedule hours":"4:00 pm -2:00 am",
+    "phone":22256776,
+    "menu":""
+  },
+  {
+    "id":4,
+    "name":"Joe's Sports Grill",
+    "direction":"Centro Comercial Aeroplaza (Frente Aeropuerto Toncontin)",
+    "schedule days":"Martes - Sabado",
+    "schedule hours":"6:00 pm -2:00 am",
+    "phone":22266765,
+    "menu":""
+  },
+  {
+    "id":5,
+    "name":"La Cantina",
+    "direction":"Residencial El Trapiche",
+    "schedule days":"Lunes - Sabado",
+    "schedule hours":"4:00 pm -2:00 am",
+    "phone":22277854,
+    "menu":""
+  },
+  {
+    "id":6,
+    "name":"Loca Luna",
+    "direction":"Col. Castano sur dos cuadras al sur del semaforo de Ba",
+    "schedule days":"Martes - Sabado",
+    "schedule hours":"6:00 pm -2:00 am",
+    "phone":22288943,
+    "menu":""
+  },
+  {
+    "id":7,
+    "name":"Pato Mar",
+    "direction":"Col. Palmira, Tegucigalpa, Francisco Morazan Dept",
+    "schedule days":"Miercoles - Sabado",
+    "schedule hours":"6:00 pm -2:00 am",
+    "phone":22299032,
+    "menu":""
+  },
+  {
+    "id":8,
+    "name":"Sabor Cubano",
+    "direction":"Colonia Palmira",
+    "schedule days":"Miercoles - Sabado",
+    "schedule hours":"6:00 pm -2:00 am",
+    "phone":22301221,
+    "menu":""
+  },
+  {
+    "id":9,
+    "name":"Tres Tintas",
+    "direction":"Colonia Palmira",
+    "schedule days":"Lunes - Sabado",
+    "schedule hours":"4:00 pm -2:00 am",
+    "phone":22301310,
+    "menu":""
+  }
+]

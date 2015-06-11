@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var noticias = require('./routes/noticias');
+var noticias = require('./routes/news');
 var bars = require('./routes/bars');
 var about = require('./routes/about');
 

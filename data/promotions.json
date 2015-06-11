@@ -1,0 +1,30 @@
+[
+  {
+    "id":1,
+    "id_bar":1,
+    "promotion":"Happy Hour en cocteles",
+    "date":"6/10/2015",
+    "time":"8:00pm - 10:00pm"
+  },
+  {
+    "id":2,
+    "id_bar":3,
+    "promotion":"Vino a mitad de precio",
+    "date":"7/10/2015",
+    "time":"6:00pm - 8:00pm"
+  },
+  {
+    "id":3,
+    "id_bar":4,
+    "promotion":"Cubetazo a Lps. 190 ",
+    "date":"8/10/2015",
+    "time":"6:00pm - 10:00pm"
+  },
+  {
+    "id":4,
+    "id_bar":6,
+    "promotion":"Alitas y nachos a Lps. 100",
+    "date":"9/10/2015",
+    "time":"6:00pm - 10:00pm"
+  }
+]
