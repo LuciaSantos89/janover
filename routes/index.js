@@ -10,8 +10,8 @@ router.get('/', function(req, res, next) {
 	var barsFile = './data/bars.json';
 	var bars;
 
-	jsonfile.readFile(promotionsFile, function(err, obj) {
-		promotions = obj;
+	//jsonfile.readFile(promotionsFile, function(err, obj) {
+	//	promotions = obj;
 		jsonfile.readFile(barsFile, function(err, obj) {
 			bars = obj;
 			res.render('index', {
@@ -21,7 +21,7 @@ router.get('/', function(req, res, next) {
 			});
 		});
 
-	});
+	//});
 
 });
 
