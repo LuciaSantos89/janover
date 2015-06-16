@@ -10,18 +10,24 @@ router.get('/', function(req, res, next) {
 	var barsFile = './data/bars.json';
 	var bars;
 
-	//jsonfile.readFile(promotionsFile, function(err, obj) {
-	//	promotions = obj;
-		jsonfile.readFile(barsFile, function(err, obj) {
-			bars = obj;
+	jsonfile.readFile(promotionsFile, function(err, obj1) {
+		promotions = obj1;
+		jsonfile.readFile(barsFile, function(err, obj2) {
+			bars = obj2;
+			for (var i in bars) {
+				for (var j in promotions) {
+					if (bars[i].id == promotions[j].id_bar) {
+						promotions[j].bar_name = bars[i].name;
+					}
+				}
+			}
 			res.render('index', {
 				title: 'Janover',
 				bars: bars,
 				promotions: promotions
 			});
 		});
-
-	//});
+	});
 
 });
 

@@ -17,12 +17,12 @@ router.get('/:bar_id', function(req, res, next) {
 	var barsFile = './data/bars.json';
 	var bars;
 	var bar;
-	var promotions = [];
+	var bar_promotions = [];
 
-	jsonfile.readFile(promotionsFile, function(err, obj) {
-		promotions = obj;
-		jsonfile.readFile(barsFile, function(err, obj) {
-			bars = obj;
+	jsonfile.readFile(promotionsFile, function(err, obj1) {
+		promotions = obj1;
+		jsonfile.readFile(barsFile, function(err, obj2) {
+			bars = obj2;
 			for (var i in bars) {
 				if (bar_id == bars[i].id) {
 					bar = bars[i];
@@ -31,12 +31,14 @@ router.get('/:bar_id', function(req, res, next) {
 			}
 			for (var j in promotions){
 				if(bar.id == promotions[j].id_bar){
-					promotions.push(promotions[j]);
+					bar_promotions.push(promotions[j]);
 				}
 			}
+			console.log();
 			res.render('bars', {
 				title: 'Bar - Janover',
-				bar:bar
+				bar:bar,
+				promotions:bar_promotions
 			});
 		});
 

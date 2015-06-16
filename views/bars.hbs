@@ -9,9 +9,15 @@
 				</header>
 
 				<p><img src="/images/{{bar.id}}.jpg" alt=""></p>
-
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, consequuntur eius repellendus eos aliquid molestiae ea laborum ex quibusdam laudantium voluptates placeat consectetur quam aliquam beatae soluta accusantium iusto nihil nesciunt unde veniam magnam repudiandae sapiente.</p>
-				
+				{{#if promotions}}
+				{{#each promotions}}
+				<p> <b>{{this.promotion}}</b><br/>
+					{{this.date}}<br/>
+					{{this.time}}
+					
+				</p>
+				{{/each}}
+				{{/if}}
 			</article>
 			<!-- /Article -->
 

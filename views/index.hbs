@@ -2,15 +2,16 @@
 	
 	<div class="row section featured topspace">
 		<h2 class="section-title"><span>Hoy</span></h2>
-		<!--div class="row">
+		<div class="row">
 			{{#each promotions}}
 			<div class="col-sm-6 col-md-3">
-				<h3 class="text-center">{{bar name}}</h3>
-				<p>{{this.promotion}}</p>
-				<p class="text-center"><a href="newsh" class="btn btn-action">Leer mas</a></p>
+				<h3 class="text-center">{{this.bar_name}}</h3>
+				<p class="text-center">{{this.promotion}}</p>
+				<p class="text-center">{{this.time}}</p>
+				<p class="text-center"><a href="/bar/{{this.id_bar}}" class="btn btn-action">Leer mas</a></p>
 			</div>
 			{{/each}}
-		</div-->
+		</div>
 	</div> <!-- / section -->
 		
 		<div class="row section recentworks topspace">
